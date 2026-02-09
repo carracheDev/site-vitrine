@@ -90,16 +90,16 @@ export default function AboutContent() {
         <div className="grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              titre: 'Analyse',
-              texte: 'Je prends le temps de comprendre le besoin avant d'écrire la moindre ligne de code.',
+              titre: "Analyse",
+              texte: "Je prends le temps de comprendre le besoin avant d'écrire la moindre ligne de code.",
             },
             {
-              titre: 'Développement',
-              texte: 'Code propre, structuré et évolutif, avec des technologies modernes.',
+              titre: "Développement",
+              texte: "Code propre, structuré et évolutif, avec des technologies modernes.",
             },
             {
-              titre: 'Livraison',
-              texte: 'Résultat fonctionnel, testé et prêt à être utilisé ou déployé.',
+              titre: "Livraison",
+              texte: "Résultat fonctionnel, testé et prêt à être utilisé ou déployé.",
             },
           ].map((etape, index) => (
             <motion.div
