@@ -55,7 +55,7 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.5, type: "tween" }}
       className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur border-b border-[#00f0ff]/20"
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">

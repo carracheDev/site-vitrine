@@ -42,7 +42,7 @@ export default function ContactContent() {
       x: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
+        type: "tween"
       }
     }
   }
@@ -54,7 +54,7 @@ export default function ContactContent() {
       x: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        type: "tween"
       }
     }
   }
