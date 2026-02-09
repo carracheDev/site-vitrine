@@ -176,7 +176,7 @@ export default function HomeContent() {
         viewport={{ once: true }}
         className="mt-32"
       >
-        <h2 className="text-center font-bold text-4xl sm:text-5xl lg:text-6xl mb-12 gradient-text-cyan-purple">
+        <h2 className="text-center font-bold text-3xl md:text-4xl  sm:text-5xl lg:text-6xl mb-12 gradient-text-cyan-purple">
           Pourquoi travailler avec moi ?
         </h2>
 
@@ -209,7 +209,7 @@ export default function HomeContent() {
         viewport={{ once: true }}
         className="mt-32 mb-20 text-center"
       >
-        <h2 className="text-center font-bold text-4xl sm:text-5xl lg:text-6xl mb-6 gradient-text-cyan-purple">
+        <h2 className="text-center font-bold text-3xl md:text-4xl sm:text-5xl lg:text-6xl mb-6 gradient-text-cyan-purple">
           Vous avez un projet ?
         </h2>
         <p className="text-muted-foreground mb-10 text-lg text-gray-400 max-w-2xl mx-auto">
