@@ -36,7 +36,6 @@ export default function Footer() {
   const linkVariants = {
     hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0 }
-    }
   };
 
   return (
@@ -50,7 +49,7 @@ export default function Footer() {
         className="container mx-auto px-6 py-16 grid gap-12 md:grid-cols-3 text-center md:text-left"
       >
         {/* Identité */}
-        <motion.div variants={itemVariants} className="space-y-6">
+        <motion.div variants={itemVariants} transition={{ duration: 0.5 }} className="space-y-6">
           <h3 className="font-semibold text-cyan-500 text-lg">
             Sodjinou Carrache
           </h3>
@@ -71,8 +70,8 @@ export default function Footer() {
               <motion.li
                 key={link.name}
                 variants={linkVariants}
+                transition={{ duration: 0.3 }}
                 whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
               >
                 <Link
                   href={link.href}
