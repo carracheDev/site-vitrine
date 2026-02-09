@@ -19,21 +19,11 @@ export default function Navbar() {
   const menuVariants = {
     closed: {
       opacity: 0,
-      height: 0,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut"
-      }
+      height: 0
     },
     open: {
       opacity: 1,
-      height: "auto",
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-        staggerChildren: 0.1,
-        delayChildren: 0.1
-      }
+      height: "auto"
     }
   }
 
@@ -44,10 +34,7 @@ export default function Navbar() {
     },
     open: {
       opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.3
-      }
+      x: 0
     }
   }
 
@@ -138,6 +125,7 @@ export default function Navbar() {
         {open && (
           <motion.div
             variants={menuVariants}
+            transition={{ duration: 0.3, staggerChildren: 0.1, delayChildren: 0.1 }}
             initial="closed"
             animate="open"
             exit="closed"
@@ -148,6 +136,7 @@ export default function Navbar() {
                 <motion.div
                   key={link.name}
                   variants={menuItemVariants}
+                  transition={{ duration: 0.3 }}
                 >
                   <Link
                     onClick={() => setOpen(false)}
@@ -161,6 +150,7 @@ export default function Navbar() {
 
               <motion.div
                 variants={menuItemVariants}
+                transition={{ duration: 0.3 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Button className="bg-cyan-400 hover:bg-cyan-500 text-black rounded-full mt-4 w-full transition-colors">
