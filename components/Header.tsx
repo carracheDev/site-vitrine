@@ -97,7 +97,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
           >
             <Button  className="bg-cyan-400 hover:bg-cyan-500 text-black rounded-full transition-colors">
-              <a href="">Démarrer un projet</a>
+              <a href="/contact">Démarrer un projet</a>
             </Button>
           </motion.div>
         </motion.div>
