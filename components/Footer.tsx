@@ -30,24 +30,12 @@ export default function Footer() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        type: "tween"
-      }
-    }
+    visible: { opacity: 1, y: 0 }
   };
 
   const linkVariants = {
     hidden: { opacity: 0, x: -10 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.3
-      }
+    visible: { opacity: 1, x: 0 }
     }
   };
 
@@ -76,7 +64,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Navigation */}
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants} transition={{ duration: 0.5 }}>
           <h4 className="font-semibold mb-4 text-white">Navigation</h4>
           <ul className="space-y-2">
             {navigationLinks.map((link, index) => (
@@ -98,7 +86,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Contact */}
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants} transition={{ duration: 0.5 }}>
           <h4 className="mb-4 font-semibold text-white">Contact</h4>
           <ul className="space-y-2 text-gray-400">
             <motion.li

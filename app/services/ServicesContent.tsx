@@ -67,11 +67,7 @@ export default function ServicesContent() {
     visible: { 
       opacity: 1, 
       y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        type: "tween"
-      }
+      scale: 1
     }
   }
 
@@ -105,6 +101,7 @@ export default function ServicesContent() {
           <motion.div
             key={index}
             variants={cardVariants}
+            transition={{ duration: 0.5 }}
             whileHover={{ 
               scale: 1.05,
               transition: { duration: 0.2 }

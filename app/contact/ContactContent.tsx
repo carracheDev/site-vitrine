@@ -37,26 +37,12 @@ export default function ContactContent() {
 
   const itemVariants = {
     hidden: { opacity: 0, x: -30 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.5,
-        type: "tween"
-      }
-    }
+    visible: { opacity: 1, x: 0 }
   }
 
   const formVariants = {
     hidden: { opacity: 0, x: 30 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.6,
-        type: "tween"
-      }
-    }
+    visible: { opacity: 1, x: 0 }
   }
 
   return (
@@ -86,6 +72,7 @@ export default function ContactContent() {
         >
           <motion.h1
             variants={itemVariants}
+            transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold gradient-text-cyan-purple"
           >
             Travaillons <br /> Ensemble
@@ -93,6 +80,7 @@ export default function ContactContent() {
           
           <motion.p
             variants={itemVariants}
+            transition={{ duration: 0.5 }}
             className="mt-4 text-base sm:text-lg text-gray-300"
           >
             Vous avez un projet en tête? <br />
